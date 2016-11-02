@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+
+    	<link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>GameWraith</title>
+        <script>
+		function password_check() 
+		{
+    	var pass1 = document.getElementById("pass1").value;
+    	var pass2 = document.getElementById("pass2").value;
+    	var ok = true;
+    	if (pass1 != pass2) 
+    	{
+        	alert("Your passwords do not match");
+        	document.getElementById("pass1").style.borderColor = "#E34234";
+        	document.getElementById("pass2").style.borderColor = "#E34234";
+        	ok = false;
+    	}
+    	else 
+    	{
+        	alert("You are now registered!");
+    	}
+    	return ok;
+}
+</script>
+        
+    </head>
+    
+    <body style="background-color: #191919">
+    
+    <div id="main-page">
+    
+    <div style="display: inline-block; width:1190px;height:100%;line-height:3em;overflow:hidden; padding:5px;color:#714D03;">
+
+    
+	
+		<div id="top-section">
+		<a href="index.html">
+		<img src="images/GameWraith-logo.png" alt="Oops!" style="float: left; width:930px; height: 120px;border-radius: 25px"></a>		
+        </div>
+        
+        <div class="dropdown">
+  			<form style="display: inline" action="index.html" method="get">
+  				<button onclick="myFunction()" class="dropbtn">Home</button>
+			</form>
+		</div>
+
+
+		
+        <div class="dropdown">
+  			<form style="display: inline" action="latesttrailer.html" method="get">
+  				<button onclick="myFunction()" class="dropbtn">Latest Trailer</button>
+			</form>
+		</div>
+        
+        <hr>
+        
+        <form id="signin">			
+			<input type="text" name="name" placeholder="Username" required>
+        	<input type="text" name="password" placeholder="Password" required> <br>
+        	<button value="login">Login</button> <a href="account-creation.html">Register</a>	       		
+        </form>
+        	
+        <div id="image-container">
+        	<div id="floated-images">
+<br>
+        	<form  id="regform" onsubmit="return password_check()" method="post">			
+				<p>Username: <input type="text" name="name" placeholder="Username" required></p>
+				<p>Password: <input type="password" id="pass1" name="password" placeholder="Password"> </p>
+				<p>Re-enter Password: <input type="password" id="pass2" name="confirmPass" placeholder="Confirm Password"> </p>     		
+        		<p>Email: <input type="email" name="email" placeholder="example@domain.com" required></p>
+        		<p><input type="submit" value="Submit"></p>
+        	</form> 	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        	</div>
+        </div>
+
+       	
+		<div class="left-side-section">
+        	<table class="left-side-links">
+        		<caption class="left-side-captions">News</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://store.steampowered.com/app/374320/">Dark Souls III</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamepedia.com/news/1069-survival-mmo-the-black-death-enters-steam-early">Black Death Server Issues</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="https://openmw.org/en/">OpenMW Puts Out 0.39.0</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.eurogamer.net/articles/2016-04-20-the-division-players-up-in-arms-over-bugs-exploits-and-glitches">The Division Self-Destructs</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.polygon.com/2016/4/20/11462516/destiny-spring-update-loot-microtransactions">Destiny Soon to be P2W?</a></td></tr>
+        			</tbody>
+        	</table>
+        	<table class="left-side-links">	
+        		<caption class="left-side-captions">Reviews</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.ign.com/articles/2016/04/22/battlefleet-gothic-armada-review?watch">Battlefleet: Gothic Armada</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gameinformer.com/games/star_fox_zero/b/wii_u/archive/2016/04/20/star-fox-zero-review-fox-sheds-some-appeal-in-this-retread.aspx">Star Fox Zero</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.polygon.com/2016/3/29/11320382/stardew-valley-review">Stardew Valley</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamesradar.com/ratchet-clank-review/">Ratchet and Clank</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.pcgamer.com/baldurs-gate-siege-of-dragonspear-review/">Baldur's Gate: SOD</a></td></tr>
+        			</tbody>	
+        	</table>
+        	<table class="left-side-links">		
+        	   	<caption class ="left-side-captions">Upcoming Releases</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://us.battle.net/wow/en/legion/">World of Warcraft Legion</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamestop.com/collection/battleborn">Battleborn</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.idigitaltimes.com/deus-ex-mankind-divided-release-date-can-next-game-surpass-human-revolution-522337">Deus Ex: Mankind Divided</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamespot.com/articles/the-witcher-3-dev-wants-cyberpunk-2077-to-launch-i/1100-6432907/">Cyberpunk 2027</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamestop.com/collection/no-mans-sky">No Man's Sky</a></td></tr>
+        			</tbody>
+        	</table>
+
+        	<p style="text-align:center"><a href="contact-us.html">Contact Us</a></p>	
+        </div>	
+
+        
+        	
+    
+    </div>
+    
+    </div>
+    </body>
+</html>
+
+
+

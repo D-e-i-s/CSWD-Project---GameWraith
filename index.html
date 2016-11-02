@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+
+    	<link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>GameWraith</title>
+        <script type="text/javascript">
+        var slideimages = new Array() // create new array to preload images
+		slideimages[0] = new Image() // create new instance of image object
+		slideimages[0].src = "images/dsIII-0.jpg" // set image src property to image path, preloading image in the process
+		slideimages[1] = new Image()
+		slideimages[1].src = "images/dsIII-1.jpg"
+		slideimages[2] = new Image()
+		slideimages[2].src = "images/dsIII-2.jpg"
+		slideimages[3] = new Image()
+		slideimages[3].src = "images/dsIII-3.jpg"
+		</script>
+		
+    </head>
+    
+    <body style="background-color: #191919">
+    
+    <div id="main-page">
+    
+    <div style="display: inline-block; width:1190px;height:100%;line-height:3em;overflow:hidden; padding:5px;color:#714D03;">
+
+    
+	
+		<div id="top-section">
+		<a href="index.html">
+		<img src="images/GameWraith-logo.png" alt="Oops!" style="float: left; width:930px; height: 120px;border-radius: 25px"></a>		
+        </div>
+        
+        <div class="dropdown">
+  			<form style="display: inline" action="index.html" method="get">
+  				<button onclick="myFunction()" class="dropbtn">Home</button>
+			</form>
+		</div>
+		
+        <div class="dropdown">
+  			<form style="display: inline" action="latesttrailer.html" method="get">
+  				<button onclick="myFunction()" class="dropbtn">Latest Trailer</button>
+			</form>
+		</div>
+        
+        <hr>
+        
+        <form id="signin">			
+			<input type="text" name="name" placeholder="Username" required>
+        	<input type="text" name="password" placeholder="Password" required> <br>
+        	<button value="login">Login</button> <a href="account-creation.html">Register</a>	       		
+        </form>
+        	
+        <div id="image-container">
+        	<div id="floated-images">
+        		<p class="largeimages">
+        			<a href="https://www.darksouls3.com/us/" target="blank"></a>
+        			<div id="justcontainer">
+        				<img src="images/dsIII-0.jpg" alt="oops" id="slide" width=850 height=410>
+        				
+        				<script type="text/javascript">
+        				
+        				var counter=0
+
+						function slideit(){
+ 						//if browser does not support the image object, exit.
+ 						if (!document.images)
+							return
+							document.getElementById('slide').src = slideimages[counter].src
+						if (counter<3)
+							counter++
+ 						else
+							counter=0
+						setTimeout("slideit()",6500)
+						}
+
+						slideit()
+
+						</script>
+        			</div>
+        			<p id="main-image"><a href="https://www.darksouls3.com/us/" target="blank">Dark Souls III will test your skills, but will you pass the test?</a></p>
+        	
+        		<table id="tableofimagelinks">
+        			
+        			<caption>Try some of the most fantastic RPGs and Hack 'n Slashers out there!</caption>
+        			
+        			<tr>
+        				
+        				<td><a href="https://www.siegeofdragonspear.com/" target="_blank"><img src="images/bg-sod.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					<br><p class="mini-links"><a href="https://www.siegeofdragonspear.com/" target="_blank">Baldurs Gate: Siege of Dragonspear</a></p>
+        				</td>
+        				
+        				<td><a href="http://thewitcher.com/en/witcher3" target="_blank"><img src="images/witcher3.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        				    <br><p class="mini-links"><a href="http://thewitcher.com/en/witcher3" target="_blank">The Witcher 3</a></p>
+        				</td>
+        				<td><a href="http://www.grimdawn.com/" target="_blank"><img src="images/grimdawn.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					 <br><p class="mini-links"><a href="http://www.grimdawn.com/" target="_blank">Grim Dawn</a></p>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td><a href="http://store.steampowered.com/app/424370/" target="_blank"><img src="images/wolcen.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					<br><p class="mini-links"><a href="http://store.steampowered.com/app/424370/" target="_blank">Wolcen</a></p>
+        				</td>
+        				
+        				<td><a href="https://www.lionhead.com/games/fable-ii/" target="_blank"><img src="images/fable-legends.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        				    <br><p class="mini-links"><a href="https://www.lionhead.com/games/fable-ii/" target="_blank">Fable 2</a></p>
+        				</td>
+        				<td><a href="https://torment.inxile-entertainment.com/" target="_blank"><img src="images/torment-ton.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					 <br><p class="mini-links"><a href="https://torment.inxile-entertainment.com/" target="_blank">Torment: Tides of Numenara</a></p>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td><a href="http://www.divinityoriginalsin.com/agelock/?ref=http://www.divinityoriginalsin.com/" target="_blank"><img src="images/div-os.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					<br><p class="mini-links"><a href="http://www.divinityoriginalsin.com/agelock/?ref=http://www.divinityoriginalsin.com/" target="_blank">Divinity: Original Sin</a></p>
+        				</td>
+        				
+        				<td><a href="http://eternity.obsidian.net/" target="_blank"><img src="images/poe-whitemarch.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        				    <br><p class="mini-links"><a href="http://eternity.obsidian.net/" target="_blank">Pillars of Eternity</a></p>
+        				</td>
+        				<td><a href="https://www.dragonage.com/en_US/home" target="_blank"><img src="images/dragonage-inquisition.jpg" alt="Oops!" style="float:right; width:295px; height: 120px;"></a>
+        					 <br><p class="mini-links"><a href="https://www.dragonage.com/en_US/home" target="_blank">Dragon Age: Inquisition</a></p>
+        				</td>
+        			</tr>
+        		</table>
+        	</div>
+        </div>
+
+       	
+		<div class="left-side-section">
+        	<table class="left-side-links">
+        		<caption class="left-side-captions">News</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://store.steampowered.com/app/374320/">Dark Souls III Releases</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamepedia.com/news/1069-survival-mmo-the-black-death-enters-steam-early">Black Death Server Issues</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="https://openmw.org/en/">OpenMW Puts Out 0.39.0</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.eurogamer.net/articles/2016-04-20-the-division-players-up-in-arms-over-bugs-exploits-and-glitches">The Division Self-Destructs</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.polygon.com/2016/4/20/11462516/destiny-spring-update-loot-microtransactions">Destiny Soon to be P2W?</a></td></tr>
+        			</tbody>
+        	</table>
+        	<table class="left-side-links">	
+        		<caption class="left-side-captions">Reviews</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.ign.com/articles/2016/04/22/battlefleet-gothic-armada-review?watch">Battlefleet: Gothic Armada</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gameinformer.com/games/star_fox_zero/b/wii_u/archive/2016/04/20/star-fox-zero-review-fox-sheds-some-appeal-in-this-retread.aspx">Star Fox Zero</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.polygon.com/2016/3/29/11320382/stardew-valley-review">Stardew Valley</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamesradar.com/ratchet-clank-review/">Ratchet and Clank</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.pcgamer.com/baldurs-gate-siege-of-dragonspear-review/">Baldur's Gate: SOD</a></td></tr>
+        			</tbody>	
+        	</table>
+        	<table class="left-side-links">		
+        	   	<caption class ="left-side-captions">Upcoming Releases</caption>
+        			<tbody>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://us.battle.net/wow/en/legion/">World of Warcraft Legion</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamestop.com/collection/battleborn">Battleborn</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.idigitaltimes.com/deus-ex-mankind-divided-release-date-can-next-game-surpass-human-revolution-522337">Deus Ex: Mankind Divided</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamespot.com/articles/the-witcher-3-dev-wants-cyberpunk-2077-to-launch-i/1100-6432907/">Cyberpunk 2027</a></td></tr>
+        				<tr class="left-side-links"><td><a target="_blank" href="http://www.gamestop.com/collection/no-mans-sky">No Man's Sky</a></td></tr>
+        			</tbody>
+        	</table>
+
+        	<p style="text-align:center"><a href="contact-us.html">Contact Us</a></p>	
+        </div>	
+
+        
+        	
+    
+    </div>
+    
+    </div>
+    </body>
+</html>
+
